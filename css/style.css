@@ -1,0 +1,761 @@
+*, ::before, ::after { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+#bloc_page {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 100px;
+    height: 45px;
+    margin: 0 0 30px 15px;
+}
+
+nav div a {
+    margin-right: 40px;
+    padding: 20px;
+}
+
+nav div a:hover {
+    color: #0065FC;
+    border-top: solid 3px #0065FC;
+    padding-top: 48px;
+}
+
+/* Fin nav */
+
+/* Zone recherche */
+
+header h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+header form {
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 1px #F2F2F2;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+header form div {
+    width: 51px;
+    height: 50px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+    font-size: 18px;
+}
+
+header form input {
+    width: 230px;
+    height: 46px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header form button {
+    width: 132px;
+    height: 50px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    font-size: 18px;
+}
+
+header form .btn i {
+    display: none;
+}
+
+header form .btn button-text {
+    display: block;
+}
+
+/* Fin zone recherche */
+
+/* Zone filtre */
+
+#filtre {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+#filtre h4 {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding-left: 10px;
+}
+
+#filtre div {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+#filtre div i:hover {
+    color: white;
+    background-color: #0065FC;
+}
+
+.economique {
+    width: 192px;
+    height: 48px;
+    border: solid 2px #c2c2c2;
+    border-radius: 25px;
+}
+
+.familial {
+    width: 150px;
+    height: 48px;
+    border: solid 2px #c2c2c2;
+    border-radius: 25px;
+}
+
+.romantique {
+    width: 182px;
+    height: 48px;
+    border: solid 2px #c2c2c2;
+    border-radius: 25px;
+}
+
+.animaux {
+    width: 240px;
+    height: 48px;
+    border: solid 2px #c2c2c2;
+    border-radius: 25px;
+}
+
+#filtre div i {
+    width: 50px;
+    height: 52px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    font-size: 20px;
+    margin-left: -4px;
+}
+
+#filtre div p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+/* Fin zone filtre */
+
+/* Zone info */
+
+#info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#info i {
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    border: solid 2px #F2F2F2;
+    border-radius: 25px;
+    margin-right: 8px;
+}
+
+/* Fin zone info */
+
+/* Zone proposition */
+
+#proposition {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+/* Zone hebergement */
+
+#hebergement {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+#hebergement div h3 {
+    margin-bottom: 25px;
+}
+
+.afficher_plus {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+#hebergement_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.hebergement {
+    background-color: white;
+    width: 30%;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.hebergement img {
+    box-sizing: border-box;
+    border-radius: 20px 20px 0 0;
+    border: solid 5px white;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hebergement div {
+    margin-left: 15px;
+}
+
+.hebergement h4 {
+    margin-bottom: 3px;
+}
+
+.hebergement p {
+    margin-bottom: 3px;
+}
+
+.hebergement div i , .hebergement i{
+    font-size: 12px;
+    color: #0065FC;
+    margin-bottom: 8px;
+}
+
+/* fin zone hebergement */
+
+/* Zone populaire */
+
+#populaire {
+    background-color: #F2F2F2;
+    width: 30%;
+    border-radius: 20px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+#populaire_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titre i {
+    color: black;
+    font-size: 20px;
+}
+
+.populaire {
+    background-color: white;
+    width: 100%;
+    height: 25%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.populaire picture {
+    width: 45%;
+    height: 100%;
+}
+
+.populaire img {
+    box-sizing: border-box;
+    border-radius: 20px 0 0 20px;
+    border: solid 5px white;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.populaire div {
+    width: 55%;
+    height: 100%;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    padding-right: 20px;
+}
+
+.populaire div h4 {
+    margin-top: 15px;
+}
+
+.populaire p {
+    margin-top: 5px;
+}
+
+.populaire div i {
+    font-size: 12px;
+    color: #0065FC;
+    margin-top: 50px;
+}
+
+/* Fin zone populaire */
+
+/* Fin zone proposition */
+
+/* Zone activité */
+
+#activite {
+    display: flex;
+    flex-direction: column;
+}
+
+#activite h3 {
+    margin-bottom: 20px;
+}
+
+#activite_position {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+#activite_position div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+}
+
+#activite_position a {
+    color: black;
+}
+
+.activite_30, .activite_60, .activite_100 {
+    border-radius: 20px;
+    box-shadow: 0 0 10px #c2c2c2;
+}
+
+.activite_30 img, .activite_60 img, .activite_100 img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activite_30 h4, .activite_60 h4, .activite_100 h4 {
+    padding: 10px 0 0 10px;
+}
+
+.activite_30 {
+    height: 35%;
+}
+
+.activite_30 img {
+    height: 72%;
+}
+
+.activite_30 h4 {
+    height: 28%;
+}
+
+.activite_60 {
+    height: 55%;
+}
+
+.activite_60 img {
+    height: 82%;
+}
+
+.activite_60 h4 {
+    height: 18%;
+}
+
+.activite_100 {
+    height: 100%;
+}
+
+.activite_100 img {
+    height: 90%;
+}
+
+.activite_100 h4 {
+    height: 10%;
+}
+
+/* Fin zone activité */
+
+/* Footer */
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    padding: 50px;
+}
+
+footer div {
+    width: 35%;
+}
+
+footer div ul {
+    list-style: none;
+}
+
+footer div ul li {
+    margin-top: 15px;
+}
+
+/* Fin footer */
+
+/* Responsive */
+
+@media screen and (max-width: 992px) {
+    #bloc_page {
+        padding: 0px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    nav img {
+        margin: 0;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        margin-left: 15px;
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    nav div a {
+        width: 50%;
+        margin-right: 0;
+        text-align: center;
+        border-top: 0;
+        border-bottom: solid 3px #F2F2F2;
+    }
+
+    nav div a:hover {
+        padding-top: 20px;
+        border-top: 0;
+        border-bottom: solid 3px #0065FC;
+    }
+
+    header {
+        padding: 25px;
+    }
+
+    header form {
+        width: 60%;
+    }
+
+    header form input {
+        width: 65%;
+    }
+
+    header form .btn {
+        width: 25%;
+        background-color: #0065FC;
+        border: none;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    header form input {
+        margin-left: 0;
+    }
+
+    #filtre {
+        flex-direction: column;
+    }
+
+    #filtre h4 {
+        margin-bottom: 25px;
+    }
+
+    #filtre div {
+        flex-wrap: wrap;
+        align-content: center;
+        margin-left: 0;
+        margin-right: 35px;
+    }
+
+    .filtre div {
+        margin-left: 25px;
+        margin-bottom: 20px;
+    }
+
+    #proposition {
+        flex-wrap: wrap-reverse;
+    }
+
+    #hebergement {
+        width: 100%;
+        background-color: white;
+        padding: 18px;
+    }
+
+    .hebergement {
+        width: 46%;
+        box-shadow: 0 0 10px #c2c2c2;
+    }
+
+    #populaire {
+        width: 100%;
+        border-radius: 0;
+        margin-left: 0;
+        margin-top: 25px;
+        padding: 18px;
+    }
+
+    .populaire {
+        width: 100%;
+    }
+
+    .populaire div {
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+
+    .populaire picture {
+        width: 25%;
+    }
+
+    .populaire div h4 {
+        margin-top: 0;
+    }
+
+    .populaire p {
+        margin-top: 10px;
+        margin-bottom: 72px;
+    }
+
+    .populaire div i {
+        margin-top: 0;
+    }
+
+    #activite {
+        padding: 0 18px 0px 18px;
+        height: auto;
+    }
+
+    #activite h3 {
+        margin-bottom: 30px;
+    }
+
+    #activite_position {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #activite_position div {
+        width: 45%;
+    }
+
+    .activite_30, .activite_60 {
+        height: 170px;
+        margin-bottom: 30px;
+        box-shadow: 0 0 10px #c2c2c2;
+    }
+
+    .activite_100 {
+        height: 370px;
+    }
+
+    .activite_30 h4, .activite_60 h4, .activite_100 h4 {
+        padding-left: 10px;
+        height: 50px;
+    }
+
+    .activite_30 img, .activite_60 img {
+        height: 120px;
+    }
+
+    .activite_100 img {
+        height: 320px;
+    }
+
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 24px;
+    }
+
+    footer div {
+        margin-bottom: 50px;
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 18px;
+    }
+
+    header form {
+        width: 100%;
+    }
+
+    header form input {
+        width: 75%;
+    }
+
+    header form .btn {
+        width: 15%;
+    }
+
+    header form .btn .button-text {
+        display: none;
+    }
+
+    header form .btn i {
+        display: flex;
+        justify-content: center;
+    }
+
+    #filtre div {
+        margin-right: 3px;
+    }
+
+    .hebergement {
+        width: 100%;
+    }
+
+    .populaire div {
+        width: 55%;
+        height: 100%;
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-bottom: 25px;
+        padding-right: 20px;
+    }
+
+    .populaire picture {
+        width: 45%;
+    }
+
+    .populaire div h4 {
+        margin-top: 15px;
+    }
+
+    .populaire p {
+        margin-top: 5px;
+        margin-bottom: 50px;
+    }
+
+    #activite_position {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #activite_position div {
+        width: 100%;
+    }
+
+    .activite_30, .activite_60, .activite_100 {
+        height: 170px;
+        margin-bottom: 30px;
+        box-shadow: 0 0 10px #c2c2c2;
+    }
+
+    .activite_30 h4, .activite_60 h4, .activite_100 h4 {
+        padding-left: 10px;
+        height: 50px;
+    }
+
+    .activite_30 img, .activite_60 img, .activite_100 img {
+        height: 120px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    footer div {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+}
+
+/* Fin responsive */
+
+/* min-width interdit */
